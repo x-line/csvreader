@@ -40,9 +40,11 @@ Constructors:
 Supported options: Filepath, stream, or text
 
 ```cs
-//Open as File
 string filepath = @"C:\data.txt";
+
+//Open as File
 var reader = new DelimitedFileReader(filepath);
+//...Code here
 
 //Open as Stream
 using (var streamreader = new StreamReader(filepath))
